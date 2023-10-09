@@ -1,14 +1,16 @@
 import { useContext } from "react";
 import UserContext from "../state/UserContext";
+import FlightSearchComponent from "./FlightSearchComponent";
+import FlightsDisplayComponent from "./FlightsDisplayComponent";
+import FlightContext from "../state/FlightContext";
 
 const Home = () => {
   const { user } = useContext(UserContext);
+  const { flightData } = useContext(FlightContext);
   return (
     <div>
-      <button type="button" className="btn">
-        Base class
-      </button>
-      <h1>{user.email}</h1>
+      <FlightSearchComponent />
+      <FlightsDisplayComponent />
     </div>
   );
 };

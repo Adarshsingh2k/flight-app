@@ -7,7 +7,7 @@ import { GoogleAuthProvider, getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAPCH6zBXs8pES1UpGFIXM66ZaJN50ZSUc",
+  apiKey: process.env.REACT_APP_FIREBASE_CRED,
   authDomain: "flightapp-365f5.firebaseapp.com",
   projectId: "flightapp-365f5",
   storageBucket: "flightapp-365f5.appspot.com",
