@@ -3,6 +3,8 @@ import FlightContext from "../../state/FlightContext";
 import GptPrompt from "./GptPrompt";
 import PromptContext from "../../state/PromptContext";
 import GptDetails from "./GptDetails";
+import FlightPrice from "./FlightPrice";
+import FlightsDisplayComponent from "../FlightsDisplayComponent";
 
 const GptBody = () => {
   const [promptData, setPromptData] = useState(null);
@@ -10,7 +12,12 @@ const GptBody = () => {
     <div>
       <PromptContext.Provider value={{ promptData, setPromptData }}>
         <GptPrompt />
-        <GptDetails />
+        <div className="flex flex-row w-[100%]">
+          <GptDetails />
+
+          <FlightPrice />
+          {/* <FlightsDisplayComponent /> */}
+        </div>
       </PromptContext.Provider>
     </div>
   );

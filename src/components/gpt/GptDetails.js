@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import PromptContext from "../../state/PromptContext";
+// import FlightContext from "../../state/FlightContext";
 
 const GptDetails = () => {
   const { promptData } = useContext(PromptContext);
-  console.log(promptData);
 
+  console.log(promptData);
   return (
     promptData && (
-      <div>
+      <div className="w-8/12">
         <div className="p-5">
           <div className="text-center">
             <h1 className="font-bold ">
