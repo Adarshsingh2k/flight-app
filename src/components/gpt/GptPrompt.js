@@ -1,21 +1,24 @@
 import React, { useRef } from "react";
 import assistant from "../../assets/assistant.png";
 import openai from "../../utils/openai";
+import { useContext } from "react";
+import PromptContext from "../../state/PromptContext";
 
 const GptPrompt = () => {
+  const { setPromptData } = useContext(PromptContext);
   const prompt = useRef(null);
 
   const handleGptSearch = async () => {
     console.log(prompt.current.value);
 
-    const gptQuery = `Please provide a detailed travel itinerary for ${prompt.current.value}, covering the major cities and attractions.
-       Ensure the itinerary includes the following:  A starting point(preferably a major city or airport).
-      A list of cities to visit in the state/region.
-      A brief description of each city, including the estimated travel time from the previous city, major attractions to visit, and the recommended duration of stay.
-      A return point (preferably back to the starting city or a major exit point).
-      Make sure to provide the list of cities as an array for reference.
-      Example: [State/Region Name: 'Gujarat']
-      Cities to visit in Gujarat: ['Ahmedabad', 'Vadodara', 'Surat', 'Rajkot', ...]`;
+    // const gptQuery = `Please provide a detailed travel itinerary for ${prompt.current.value}, covering the major cities and attractions.
+    //    Ensure the itinerary includes the following:  A starting point(preferably a major city or airport).
+    //   A list of cities to visit in the state/region.
+    //   A brief description of each city, including the estimated travel time from the previous city, major attractions to visit, and the recommended duration of stay.
+    //   A return point (preferably back to the starting city or a major exit point).
+    //   Make sure to provide the list of cities as an array for reference.
+    //   Example: [State/Region Name: 'Gujarat']
+    //   Cities to visit in Gujarat: ['Ahmedabad', 'Vadodara', 'Surat', 'Rajkot', ...]`;
 
     // const gptSuggestion = await openai.chat.completions.create({
     //   messages: [{ role: "user", content: gptQuery }],
@@ -123,8 +126,11 @@ const GptPrompt = () => {
       const itinerary = matchItinerary[2].trim();
       result.itineraries[city] = itinerary;
     }
+    result.promptData = prompt.current.value;
 
     console.log(result);
+
+    setPromptData(result);
   };
   return (
     <div className="bg-slate-200 to-90% shadow-xl rounded-xl flex  mx-auto justify-center items-center mt-[6%] w-[55%] px-4 py-4">
