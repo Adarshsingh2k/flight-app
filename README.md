@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# FlyNow  
+![image](https://github.com/Adarshsingh2k/flight-app/assets/41821911/81922c08-f3e7-4745-a4ce-bf6a98b7f96c)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This project is a modern React application that utilizes the Amadeus APIs for flight data, the React Context API for state management, Google Firebase Authentication for user authentication, and OpenAI API for doing awesome stuff.
 
-In the project directory, you can run:
+![image](https://github.com/Adarshsingh2k/flight-app/assets/41821911/2ab09163-9f73-4816-a6bc-46b79361e3b0)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Features](#features)
+- [Future Requirements](#future-requirements)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contribute](#contribute)
+- [License](#license)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Amadeus API Integration**: Fetch real-time flight data including IATA codes, flight prices, and more.
+- **Context API**: Utilizes the React Context API for efficient state management across components.
+- **Google Firebase Authentication**: Secure user authentication and registration with Google Firebase.
+- **Responsive Design**: Optimized for both desktop and mobile view.
+- **Error Handling**: Robust error handling for API requests.
+- **Prompt Iternary**: Integrated OpenAi Api for generating travel itineraries based on GPT-3.5.
 
-### `npm run build`
+![image](https://github.com/Adarshsingh2k/flight-app/assets/41821911/448ca7d4-3048-4495-ad77-b3808e9158eb)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Requirements
 
-### `npm run eject`
+- **Flight Booking**: Integrate flight booking capabilities directly from the application. ![High Priority](https://img.shields.io/badge/Priority-High-red)
+- **User Profiles**: Users can save their flight preferences and search history. ![Medium Priority](https://img.shields.io/badge/Priority-Medium-yellow)
+- **Notifications**: Implement notifications for flight price changes. ![Medium Priority](https://img.shields.io/badge/Priority-Medium-yellow)
+- **Multi-language Support**: Add support for multiple languages for a broader audience. ![Low Priority](https://img.shields.io/badge/Priority-Low-green)
+- **Responsive**: A few screens are still not responsive. ![High Priority](https://img.shields.io/badge/Priority-High-red)
+- **AutoComplete**: AutoComplete is having some issues that need to be resolved. ![High Priority](https://img.shields.io/badge/Priority-High-red)
+- **State and Code Quality**: Ensure the app follows the SOLID principle and the state is managed accordingly. ![High Priority](https://img.shields.io/badge/Priority-High-red).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+(Add any other future requirements or enhancements you plan on making)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
+   ```
+   git clone https://github.com/Adarshsingh2k/flight-app
+   ```
 
-## Learn More
+2. Navigate to the project directory:
+   ```
+   cd flight-app
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install the required packages:
+   ```
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start the React application:
+   ```
+   npm start
+   ```
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Register or login using Google Firebase authentication.
+- Use the flight search to find flights based on your criteria.
+- View detailed flight information and prices.
+- Use GPT for generating Awesome Itineraries.
 
-### Analyzing the Bundle Size
+## Contribute
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are always welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
