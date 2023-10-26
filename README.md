@@ -1,11 +1,10 @@
-# FlyNow  
-![image](https://github.com/Adarshsingh2k/flight-app/assets/41821911/81922c08-f3e7-4745-a4ce-bf6a98b7f96c)
+# FlyNow
 
+![image](https://github.com/Adarshsingh2k/flight-app/assets/41821911/81922c08-f3e7-4745-a4ce-bf6a98b7f96c)
 
 This project is a modern React application that utilizes the Amadeus APIs for flight data, the React Context API for state management, Google Firebase Authentication for user authentication, and OpenAI API for doing awesome stuff.
 
 ![image](https://github.com/Adarshsingh2k/flight-app/assets/41821911/2ab09163-9f73-4816-a6bc-46b79361e3b0)
-
 
 ## Table of Contents
 
@@ -27,8 +26,6 @@ This project is a modern React application that utilizes the Amadeus APIs for fl
 
 ![image](https://github.com/Adarshsingh2k/flight-app/assets/41821911/448ca7d4-3048-4495-ad77-b3808e9158eb)
 
-
-
 ## Future Requirements
 
 - **Flight Booking**: Integrate flight booking capabilities directly from the application. ![High Priority](https://img.shields.io/badge/Priority-High-red)
@@ -39,23 +36,22 @@ This project is a modern React application that utilizes the Amadeus APIs for fl
 - **AutoComplete**: AutoComplete is having some issues that need to be resolved. ![High Priority](https://img.shields.io/badge/Priority-High-red)
 - **State and Code Quality**: Ensure the app follows the SOLID principle and the state is managed accordingly. ![High Priority](https://img.shields.io/badge/Priority-High-red).
 
-  
-
-(Add any other future requirements or enhancements you plan on making)
-
 ## Getting Started
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/Adarshsingh2k/flight-app
    ```
 
 2. Navigate to the project directory:
+
    ```
    cd flight-app
    ```
 
 3. Install the required packages:
+
    ```
    npm install
    ```
@@ -79,4 +75,3 @@ Contributions are always welcome! Please read the [contribution guidelines](CONT
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
-
