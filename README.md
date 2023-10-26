@@ -35,6 +35,7 @@ This project is a modern React application that utilizes the Amadeus APIs for fl
 - **Responsive**: A few screens are still not responsive. ![High Priority](https://img.shields.io/badge/Priority-High-red)
 - **AutoComplete**: AutoComplete is having some issues that need to be resolved. ![High Priority](https://img.shields.io/badge/Priority-High-red)
 - **State and Code Quality**: Ensure the app follows the SOLID principle and the state is managed accordingly. ![High Priority](https://img.shields.io/badge/Priority-High-red).
+- **Loading** : Add loaders or shimmer UI whereever needed. ![High Priority](https://img.shields.io/badge/Priority-High-red).
 
 ## Getting Started
 
